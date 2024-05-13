@@ -39,7 +39,7 @@ Interactive elements
 ### Links
 
 - Solution URL: [Github](https://github.com/cvtqx/blog-preview-card)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Github pages](https://cvtqx.github.io/blog-preview-card/)
 
 ## My process
 
