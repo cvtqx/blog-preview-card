@@ -1,0 +1,140 @@
+:root {
+  --clr-yellow: hsl(47, 88%, 63%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-grey: hsl(0, 0%, 50%);
+  --clr-black: hsl(0, 0%, 7%);
+
+  --fs-small: 12px;
+  --fs-medium: 14px;
+  --fs-large: 20px;
+
+  --fw-500: 500;
+  --fw-800: 800;
+
+  --ff-primary: 'Figtree', sans-serif;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--ff-primary);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--clr-yellow);
+}
+
+.card-container {
+  text-align: center;
+  width: 327px;
+  height: 501px;
+  background-color: var(--clr-white);
+  border: solid 1px var(--clr-black);
+  border-radius: 15px;
+  box-shadow: 10px 10px;
+  padding: 24px;
+}
+
+.card-image {
+  display: flex;
+  width: auto;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.card-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.card-body {
+  text-align: left;
+  height: 173px;
+}
+
+.card-body__category {
+  background-color: var(--clr-yellow);
+  width: 73px;
+  height: 26px;
+  text-align: center;
+  align-content: center;
+  font-size: var(--fs-small);
+  font-weight: var(--fw-800);
+  border-radius: 4px;
+}
+
+.card-body__publish-date {
+  font-size: var(--fs-small);
+}
+
+.card-body__title {
+  font-size: var(--fs-large);
+}
+
+.card-body__title:hover, .card-body__title:focus{
+    color: var(--clr-yellow);
+}
+
+.card-body__description {
+  font-size: var(--fs-medium);
+  color: var(--clr-grey);
+  line-height: 150%;
+}
+
+.card-author {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-top: 15px;
+  font-size: var(--fs-small);
+  font-weight: var(--fw-800);
+  align-items: center;
+}
+
+
+.card-author_avatar img {
+  height: 32px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* styles for desktop */
+
+@media screen and (min-width: 750px) {
+  .card-container {
+    width: 384px;
+    height: 522px;
+  }
+
+  .card-body {
+    height: 194px;
+    margin-top: 24px;
+  }
+
+  .card-author{
+    margin-top: 0;
+  }
+}
